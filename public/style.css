@@ -1,0 +1,145 @@
+body{
+  padding: 0;
+  margin: 0;
+  
+}
+.optionContainer{
+    background-color: rgb(208 221 216);
+    height: 50px;
+    width:40px;
+    display: inline-flex;
+    position:absolute;
+    top:1rem;
+    left:3rem;
+    justify-content: center;  
+     align-items: center;
+     /*
+      Justify-content and align-content is used for the align the content with respect to main axis 
+      */
+    border-radius: 50%;
+    box-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+img
+{
+    display:inline;
+  }
+.toolContainer{
+  display: flex;
+  height: 70px; 
+  position :absolute;
+  left:15rem;
+  top:0.5rem;
+  gap:78px;
+  background-color: rgb(208 221 216);
+  box-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.pencil-tool {
+   height: 4rem ; 
+   background-color: rgb(242, 245, 234);
+   position: absolute;
+   top:4.9rem;
+   left:15rem;
+   display: none;
+   box-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.pencil-with-content
+{
+  height:1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pencil-with-content input
+{
+  width: 80%;
+}
+.pencil-tool-color{
+  height: 2.5rem;
+  display: flex;
+  gap:6px;
+  justify-content: center;
+  align-items: center ;
+}  
+.pencil-color{
+  width: 1rem;
+  height: 1.6rem;
+  border-radius: 60%;
+}
+.black{
+   background-color: black;
+}
+.red{
+
+   background-color: red;
+}
+.blue{
+  background-color: blue;
+}
+.eraser-tool
+{ 
+  display: flex;
+  background-color: rgb(242, 245, 234);
+   position: absolute;
+   top:4.8rem;
+   left:22rem;
+   box-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.erasor-tool-cont{
+  display: none;
+}
+ #range{
+  width: 98px;
+} 
+
+.stickey-content{
+  height:10rem;
+  width: 12rem;
+  background-color: cadetblue;
+  position: absolute;
+  top:15rem;
+  left: 20rem;
+  box-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
+  
+}
+.full-container
+{
+  display: none;
+}
+.stickeyHeaderCont{
+  height: 1rem;
+  width:100%;
+  display: flex;
+  gap:12px;
+  background-color: rgb(170, 228, 35);
+}
+textarea
+{
+   height: 9rem;
+   width: 11.7rem;
+   border: none;
+   resize: none;
+}
+.close
+{
+  width: 1rem;
+}
+
+/* giving mination to tools contaner  */
+.scale-tool{
+  animation-name: scale-tool;
+  animation-duration: 1s;
+}
+@keyframes scale-tool {
+  0%{
+      transform: scale(0.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+.newImg{
+  height: 100%;
+  width: 100%;
+}

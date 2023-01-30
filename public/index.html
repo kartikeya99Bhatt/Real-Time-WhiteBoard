@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHITEBOARD</title>
+    <!-- Linking with the fontaswome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+     <!--linkidng with the css file  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Icons/favicon.ico" type="image/x-icon">
+    </head>
+<body>
+    
+    <!-- Hyperisor to give open close property  -->
+     <div class="optionContainer">
+        <i class="fas fa-bars"></i>
+     </div>
+     
+     <!-- tools images -->
+     <div class="toolContainer scale-tool">
+        <img class="pencil" src="Icons/pencil-png-648.png">
+        <img class="erasor" src="Icons/eraser.png">
+        <img class="stickey" src="Icons/notes.png">
+        <img class="upload" src="Icons/upload.png">
+        <img class="download" src="Icons/download.png">
+        <img class="redo" src="Icons/redo (1).png">
+        <img class="undo" src="Icons/undo.png">
+     </div>
+
+     <!-- Pencil tool -->
+     <div class="pencil-tool">
+        <div class="pencil-with-content">
+          <input id="range" type="range" min="1" max="10" value="3" class="pencil-width">
+       </div>
+        <div class="pencil-tool-color">
+
+            <div class="black pencil-color"></div>
+            <div  class="red pencil-color"></div>
+            <div  class="blue pencil-color"></div>
+        </div>
+     </div>
+     <div class=" eraser-tool">
+        <div class="erasor-tool-cont">
+            <input id="range" type="range" min="1" max="10" value="3" class="erasor-width">
+        </div>
+        
+        </div> 
+          
+        <div class="full-container">
+        <div class="stickey-content">
+         <div class="stickeyHeaderCont">
+            <div class="close">
+               <img class="close" src="Icons/close-window.png" alt="">
+            </div>
+         </div>
+         <div class="textCont">
+            <textarea  ></textarea>
+         </div>
+        </div>
+      </div>
+     <!-- linking the file with javascript file  -->
+     <canvas></canvas>
+ 
+
+     <!-- linking with the socket from socket cnd (link:https://socket.io/docs/v3/client-installation/) -->
+    <script src="https://cdn.socket.io/3.1.3/socket.io.min.js" integrity="sha384-cPwlPLvBTa3sKAgddT6krw0cJat7egBga3DJepJyrLl4Q9/5WLra3rrnMcyTyOnh" crossorigin="anonymous"></script>
+     <script>
+          let socket=io.connect("http://localhost:3000");
+     </script>
+    
+    <script src="tools.js"></script>
+    <script src="canvas.js"></script>
+</body>
+</html>

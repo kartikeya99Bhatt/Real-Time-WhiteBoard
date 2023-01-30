@@ -1,0 +1,10 @@
+Now we want to make our project Real-Time 
+what we need for it 
+. we need to create a server (EXPESS) (BACKEND)
+. we need to make our project real-time (socket-io) 
+
+-------------------------------------------------------
+ comands: 
+. npm init
+. npm install express
+. npm install socket-io
