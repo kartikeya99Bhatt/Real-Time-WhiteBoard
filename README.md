@@ -7,4 +7,4 @@
 <h3 >HTML , CSS , JavaScript , Canvas , socket.io , Express</h3>
 <hr>
 For more information:
-Freel free to contact: bhattkartikeya99@gmail.com
+<h4>Freel free to contact: bhattkartikeya99@gmail.com</h4>
