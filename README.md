@@ -6,5 +6,5 @@
 <h1>TOOLS USED</h1>
 <h3 >HTML , CSS , JavaScript , Canvas , socket.io , Express</h3>
 <hr>
-For more information:
+<b>For more information</b>:
 <h4>Freel free to contact: bhattkartikeya99@gmail.com</h4>
